@@ -1,0 +1,3 @@
+user_id,username,password_hash,full_name,email,phone,user_role,class_level,date_registered,last_login
+1,ola,ad0515721b625499fba263999f42607c5a8268cdb88a80a285eb94417b70f4cb,olakunle,olakunlebello001@gmail.com,8067121222,student,100,2026-03-24 11:22:42,2026-04-02 10:53:22
+2,ade,ad5267c8d2c48cdf8d59d090304efbf859118a89e8dba65cf30832ef41344252,ADEBAYO EMMANUEL,ade@gmail.com,8067121222,devops,develops,2026-04-02 10:04:13,2026-04-02 10:04:25

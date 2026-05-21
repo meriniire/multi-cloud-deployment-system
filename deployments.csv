@@ -1,0 +1,11 @@
+deployment_id,app_name,cloud_provider,env,status,started_at,completed_at,logs,deployed_by
+dep_20260324113554,SMART SALES,AWS,dev,success,2026-03-24 11:35:54,2026-03-24 11:35:54,"[2026-03-24 11:35:51.585675] 🚀 Starting deployment to AWS
+[2026-03-24 11:35:51.585706] 👤 Deployed by: ola
+[2026-03-24 11:35:51.585714] 📦 Application: SMART SALES
+[2026-03-24 11:35:51.585721] 🌍 Region: us-east-1
+[2026-03-24 11:35:51.585725] 🔄 Replicas: 4
+[2026-03-24 11:35:52.594626] ✅ Creating container registry
+[2026-03-24 11:35:53.095653] 🐳 Building container image
+[2026-03-24 11:35:53.595940] 📤 Pushing image to AWS container registry
+[2026-03-24 11:35:54.096477] ⚙️ Configuring load balancer
+[2026-03-24 11:35:54.596922] 🎉 Deployment completed successfully!",ola
