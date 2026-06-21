@@ -533,7 +533,7 @@ def register_user(username, password, full_name, email, phone, user_role, class_
     return True, "Registration successful!"
 
 # ============================================
-# AUTHENTICATION FUNCTION
+# AUTHENTICATION FUNCTION - FIXED
 # ============================================
 
 def authenticate_user(username, password):
@@ -545,6 +545,12 @@ def authenticate_user(username, password):
     
     if not user.empty:
         user_dict = user.iloc[0].to_dict()
+        
+        # FIX: Convert last_login column to string type to avoid dtype issues
+        if "last_login" in users_df.columns:
+            users_df["last_login"] = users_df["last_login"].astype(str)
+        
+        # Update timestamp as string
         users_df.loc[users_df["username"] == username, "last_login"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         save_users(users_df)
         return True, user_dict
